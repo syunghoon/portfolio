@@ -1,75 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SungHoon Cho</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <header>
-        <div class="gnb">
-            <div>
-                <p>SungHoon Cho</p>
-            </div>
-            <div class="menu">
-                <p>정보</p>
-                <p>인스타그램</p>
-                <p>유튜브</p>
-                <p>등등...</p>
-            </div>
+      <div class="gnb">
+        <div>
+          <p>SungHoon Cho</p>
         </div>
+        <div class="menu">
+          <p>정보</p>
+          <p>인스타그램</p>
+          <p>유튜브</p>
+          <p>등등...</p>
+        </div>
+      </div>
     </header>
     <main>
-        <div class="category">
-            <span>
-                <input id="cat-graphic" type="checkbox" value="graphic">
-                <label for="cat-graphic">Graphic</label>
-            </span>
-            <span>
-                <input id="cat-illustration" type="checkbox" value="graphic">
-                <label for="cat-illustration">Illustration</label>
-            </span>
-            <span>
-                <input id="cat-photography" type="checkbox" value="graphic">
-                <label for="cat-photography">Photography</label>
-            </span>
-            <span>
-                <input id="cat-motion" type="checkbox" value="graphic">
-                <label for="cat-motion">Motion</label>
-            </span>
-            <span>
-                <input id="cat-uiux" type="checkbox" value="graphic">
-                <label for="cat-uiux">UI/UX</label>
-            </span>
-            <span>
-                <input id="cat-3d" type="checkbox" value="graphic">
-                <label for="cat-3d">3D</label>
-            </span>
-            <span>
-                <input id="cat-branding" type="checkbox" value="graphic">
-                <label for="cat-branding">Branding</label>
-            </span>
-            <span>
-                <input id="cat-webdev" type="checkbox" value="graphic">
-                <label for="cat-webdev">Web/Dev</label>
-            </span>
-            <span>
-                <input id="cat-advertising" type="checkbox" value="graphic">
-                <label for="cat-advertising">Advertising</label>
-            </span>
-        </div>
-        <div class="content">
-            <div class="gallery">
-                <p>test</p>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+      <div class="category">
+        <span>
+          <input id="cat-graphic" type="checkbox" value="graphic" />
+          <label for="cat-graphic">Graphic</label>
+        </span>
+        <span>
+          <input id="cat-illustration" type="checkbox" value="illustration" />
+          <label for="cat-illustration">Illustration</label>
+        </span>
+        <span>
+          <input id="cat-photography" type="checkbox" value="photography" />
+          <label for="cat-photography">Photography</label>
+        </span>
+        <span>
+          <input id="cat-motion" type="checkbox" value="motion" />
+          <label for="cat-motion">Motion</label>
+        </span>
+        <span>
+          <input id="cat-uiux" type="checkbox" value="uiux" />
+          <label for="cat-uiux">UI/UX</label>
+        </span>
+        <span>
+          <input id="cat-3d" type="checkbox" value="3d" />
+          <label for="cat-3d">3D</label>
+        </span>
+        <span>
+          <input id="cat-branding" type="checkbox" value="branding" />
+          <label for="cat-branding">Branding</label>
+        </span>
+        <span>
+          <input id="cat-webdev" type="checkbox" value="webdev" />
+          <label for="cat-webdev">Web/Dev</label>
+        </span>
+        <span>
+          <input id="cat-advertising" type="checkbox" value="advertising" />
+          <label for="cat-advertising">Advertising</label>
+        </span>
+      </div>
+      <div class="content">
+        <div class="gallery">
+          <div class="external">
+            <div class="horizontal-scroll-wrapper">
+              <div class="img-wrapper slower" data-index="2022m1">
+                <a href="">
+                  <img src="./img/2022m1.png" />
+                </a>
+              </div>
+
+              <div class="img-wrapper faster" data-index="2022m2">
+                <a href="">
+                  <img src="./img/2022m2.png" />
+                </a>
+              </div>
+
+              <div class="img-wrapper slower-down" data-index="2023p1">
+                <a href="">
+                  <img src="./img/2023p1.png" />
+                </a>
+              </div>
+
+              <div class="img-wrapper faster1" data-index="2023b1">
+                <a href="">
+                  <img src="./img/2023b1.png" />
+                </a>
+              </div>
+
+              <div class="img-wrapper" data-index="2021z1">
+                <a href="">
+                  <img src="./img/2021z1.png" />
+                </a>
+              </div>
+
+              <div class="img-wrapper faster" data-index="2021p1">
+                <a href="">
+                  <img src="./img/2021p1.png" />
+                </a>
+              </div>
+
+              <div class="img-wrapper slower" data-index="2021i1">
+                <a href="">
+                  <img src="./img/2021i1.png" />
+                </a>
+              </div>
+
+              <div class="img-wrapper slower slower2" data-index="2020v2">
+                <a href="">
+                  <img src="./img/2020v2.png" />
+                </a>
+              </div>
+
+              <div class="img-wrapper faster1" data-index="2020v1">
+                <a href="">
+                  <img src="./img/2020v1.png" />
+                </a>
+              </div>
+
+              <div class="img-wrapper slower-down" data-index="2019p1">
+                <a href="">
+                  <img src="./img/2019p1.png" />
+                </a>
+              </div>
+
+              <div class="img-wrapper slower" data-index="2023m1">
+                <a href="">
+                  <img src="./img/2022m1.png" />
+                </a>
+              </div>
+
+              <div class="img-wrapper faster" data-index="2023m2">
+                <a href="">
+                  <img src="./img/2022m2.png" />
+                </a>
+              </div>
+
+              <div class="img-wrapper slower-down" data-index="2023p1">
+                <a href="">
+                  <img src="./img/2023p1.png" />
+                </a>
+              </div>
+
+              <div class="img-wrapper faster1" data-index="2023b1">
+                <a href="">
+                  <img src="./img/2023b1.png" />
+                </a>
+              </div>
+
+              <div class="img-wrapper last" data-index="2021z1">
+                <a href="">
+                  <img src="./img/2021z1.png" />
+                </a>
+              </div>
             </div>
-            <div class="meta">
-                <div class="outcome"></div>
-                <p>tag</p>
-                <div class="date"></div>
-            </div>
+          </div>
         </div>
+        <div class="meta">
+          <div class="outcome"></div>
+          <p>tag</p>
+          <span>
+            <input id="cat-poster" type="checkbox" value="poster" />
+            <label for="cat-poster">포스터</label>
+          </span>
+          <span>
+            <input id="cat-video" type="checkbox" value="video" />
+            <label for="cat-video">비디오</label>
+          </span>
+          <span>
+            <input id="cat-zine" type="checkbox" value="zine" />
+            <label for="cat-zine">소책자</label>
+          </span>
+          <span>
+            <input id="cat-website" type="checkbox" value="poster" />
+            <label for="cat-website">웹사이트</label>
+          </span>
+          <div class="date"></div>
+        </div>
+      </div>
     </main>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
