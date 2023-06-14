@@ -4,183 +4,272 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SungHoon Cho</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./stlye.css" />
+    <script src="./jquery-3.7.0.min.js"></script>
+    <script src="./isotope.pkgd.min.js"></script>
   </head>
   <body>
     <header>
       <div class="gnb">
-        <div>
-          <p>SungHoon Cho</p>
-        </div>
+        <a href="./index.html">SungHoon</a>
         <div class="menu">
-          <p>정보</p>
-          <p>인스타그램</p>
-          <p>유튜브</p>
-          <p>등등...</p>
+          <a href="./kpt.html">KPT</a>
+          <a href="https://www.instagram.com/syunghoon/" target="_blank"
+            >Instagram</a
+          >
+          <a
+            href="https://blog.naver.com/hoonsyung/222679657910"
+            target="_blank"
+            >Blog</a
+          >
         </div>
       </div>
     </header>
     <main>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-      <div class="category">
-        <span>
-          <input id="cat-graphic" type="checkbox" value="graphic" />
-          <label for="cat-graphic">Graphic</label>
-        </span>
-        <span>
-          <input id="cat-illustration" type="checkbox" value="illustration" />
-          <label for="cat-illustration">Illustration</label>
-        </span>
-        <span>
-          <input id="cat-photography" type="checkbox" value="photography" />
-          <label for="cat-photography">Photography</label>
-        </span>
-        <span>
-          <input id="cat-motion" type="checkbox" value="motion" />
-          <label for="cat-motion">Motion</label>
-        </span>
-        <span>
-          <input id="cat-uiux" type="checkbox" value="uiux" />
-          <label for="cat-uiux">UI/UX</label>
-        </span>
-        <span>
-          <input id="cat-3d" type="checkbox" value="3d" />
-          <label for="cat-3d">3D</label>
-        </span>
-        <span>
-          <input id="cat-branding" type="checkbox" value="branding" />
-          <label for="cat-branding">Branding</label>
-        </span>
-        <span>
-          <input id="cat-webdev" type="checkbox" value="webdev" />
-          <label for="cat-webdev">Web/Dev</label>
-        </span>
-        <span>
-          <input id="cat-advertising" type="checkbox" value="advertising" />
-          <label for="cat-advertising">Advertising</label>
-        </span>
+      <div id="filters" class="button-group">
+        <button class="button is-checked" data-filter="*">show all</button>
+        <button class="button" data-filter=".graphic">Graphic</button>
+        <button class="button" data-filter=".illustration">Illustration</button>
+        <button class="button" data-filter=".photography">Photography</button>
+        <button class="button" data-filter=".video">Video</button>
+        <button class="button" data-filter=".uiux">UIUX</button>
+        <button class="button" data-filter=".threed">3D</button>
+        <button class="button" data-filter=".identity">Identity</button>
+        <button class="button" data-filter=".web">Web</button>
       </div>
-      <div class="content">
-        <div class="gallery">
-          <div class="external">
-            <div class="horizontal-scroll-wrapper">
-              <div class="img-wrapper slower" data-index="2022m1">
-                <a href="">
-                  <img src="./img/2022m1.png" />
-                </a>
-              </div>
 
-              <div class="img-wrapper faster" data-index="2022m2">
-                <a href="">
-                  <img src="./img/2022m2.png" />
-                </a>
-              </div>
-
-              <div class="img-wrapper slower-down" data-index="2023p1">
-                <a href="">
-                  <img src="./img/2023p1.png" />
-                </a>
-              </div>
-
-              <div class="img-wrapper faster1" data-index="2023b1">
-                <a href="">
-                  <img src="./img/2023b1.png" />
-                </a>
-              </div>
-
-              <div class="img-wrapper" data-index="2021z1">
-                <a href="">
-                  <img src="./img/2021z1.png" />
-                </a>
-              </div>
-
-              <div class="img-wrapper faster" data-index="2021p1">
-                <a href="">
-                  <img src="./img/2021p1.png" />
-                </a>
-              </div>
-
-              <div class="img-wrapper slower" data-index="2021i1">
-                <a href="">
-                  <img src="./img/2021i1.png" />
-                </a>
-              </div>
-
-              <div class="img-wrapper slower slower2" data-index="2020v2">
-                <a href="">
-                  <img src="./img/2020v2.png" />
-                </a>
-              </div>
-
-              <div class="img-wrapper faster1" data-index="2020v1">
-                <a href="">
-                  <img src="./img/2020v1.png" />
-                </a>
-              </div>
-
-              <div class="img-wrapper slower-down" data-index="2019p1">
-                <a href="">
-                  <img src="./img/2019p1.png" />
-                </a>
-              </div>
-
-              <div class="img-wrapper slower" data-index="2023m1">
-                <a href="">
-                  <img src="./img/2022m1.png" />
-                </a>
-              </div>
-
-              <div class="img-wrapper faster" data-index="2023m2">
-                <a href="">
-                  <img src="./img/2022m2.png" />
-                </a>
-              </div>
-
-              <div class="img-wrapper slower-down" data-index="2023p1">
-                <a href="">
-                  <img src="./img/2023p1.png" />
-                </a>
-              </div>
-
-              <div class="img-wrapper faster1" data-index="2023b1">
-                <a href="">
-                  <img src="./img/2023b1.png" />
-                </a>
-              </div>
-
-              <div class="img-wrapper last" data-index="2021z1">
-                <a href="">
-                  <img src="./img/2021z1.png" />
-                </a>
-              </div>
-            </div>
+      <div class="content-wrap">
+        <div class="grid">
+          <div class="item identity">
+            <img src="./img/202302.png" />
+            <p class="name">엄니식당 리브랜딩</p>
+            <p class="year">2023</p>
+            <p class="level">3</p>
+            <p class="duration">4</p>
           </div>
+          <div class="item width2 illustration">
+            <img src="./img/202105.png" />
+            <p class="name">사랑은 김치와도 같아서 포스터</p>
+            <p class="year">2021</p>
+            <p class="level">1</p>
+            <p class="duration">1</p>
+          </div>
+          <div class="item width2 uiux graphic">
+            <img src="./img/202301.png" />
+            <p class="name">The Adventure of the Glass Room and 15 Postcards</p>
+            <p class="year">2023</p>
+            <p class="level">3</p>
+            <p class="duration">2</p>
+          </div>
+          <div class="item identity">
+            <img src="./img/202202.png" />
+            <p class="name">아빠이야기 라벨 디자인</p>
+            <p class="year">2022</p>
+            <p class="level">2</p>
+            <p class="duration">1</p>
+          </div>
+          <div class="item threed identity">
+            <img src="./img/202203.png" />
+            <p class="name">마스크팅 가면</p>
+            <p class="year">2022</p>
+            <p class="level">2</p>
+            <p class="duration">1</p>
+          </div>
+          <div class="item identity">
+            <img src="./img/202204.png" />
+            <p class="name">포쉬 패키지 디자인</p>
+            <p class="year">2022</p>
+            <p class="level">1</p>
+            <p class="duration">1</p>
+          </div>
+          <div class="item video">
+            <img src="./img/202006.png" />
+            <p class="name">아스트랄 프로젝션: 2020 커먼 피플</p>
+            <p class="year">2020</p>
+            <p class="level">2</p>
+            <p class="duration">1</p>
+          </div>
+          <div class="item width2 uiux identity">
+            <img src="./img/202201.png" />
+            <p class="name">마스크팅</p>
+            <p class="year">2022</p>
+            <p class="level">5</p>
+            <p class="duration">8</p>
+          </div>
+          <div class="item graphic photography" data-category="graphic">
+            <img src="./img/201901.png" />
+            <p class="name">물고기 드로잉</p>
+            <p class="year">2019</p>
+            <p class="level">1</p>
+            <p class="duration">1</p>
+          </div>
+          <div class="item photography">
+            <img src="./img/201902.png" />
+            <p class="name">찰칵찰칵 사진전 - 헨젤과 그레텔</p>
+            <p class="year">2019</p>
+            <p class="level">1</p>
+            <p class="duration">1</p>
+          </div>
+          <div class="item graphic photography">
+            <img src="./img/201903.png" />
+            <p class="name">엄니식당 영화포스터</p>
+            <p class="year">2019</p>
+            <p class="level">3</p>
+            <p class="duration">2</p>
+          </div>
+          <div class="item threed video">
+            <img src="./img/201904.png" />
+            <p class="name">화성 우주호텔</p>
+            <p class="year">2019</p>
+            <p class="level">3</p>
+            <p class="duration">2</p>
+          </div>
+          <div class="item graphic">
+            <img src="./img/201905.png" />
+            <p class="name">2020 캘린터</p>
+            <p class="year">2019</p>
+            <p class="level">1</p>
+            <p class="duration">1</p>
+          </div>
+          <div class="item threed">
+            <img src="./img/202206.png" />
+            <p class="name">402 First Class</p>
+            <p class="year">2022</p>
+            <p class="level">1</p>
+            <p class="duration">1</p>
+          </div>
+          <div class="item graphic">
+            <img src="./img/201906.png" />
+            <p class="name">자성을 이용한 그래픽 판화</p>
+            <p class="year">2019</p>
+            <p class="level">2</p>
+            <p class="duration">1</p>
+          </div>
+          <div class="item graphic">
+            <img src="./img/202001.png" />
+            <p class="name">포레스트 검프 은유포스터</p>
+            <p class="year">2020</p>
+            <p class="level">1</p>
+            <p class="duration">1</p>
+          </div>
+          <div class="item graphic illustration">
+            <img src="./img/202002.png" />
+            <p class="name">100 Iteration Drawing</p>
+            <p class="year">2020</p>
+            <p class="level">2</p>
+            <p class="duration">2</p>
+          </div>
+          <div class="item illustration video">
+            <img src="./img/202003.png" />
+            <p class="name">모션일기 GIF</p>
+            <p class="year">2020</p>
+            <p class="level">1</p>
+            <p class="duration">1</p>
+          </div>
+          <div class="item graphic">
+            <img src="./img/202004.png" />
+            <p class="name">Process of Homemade Pizza</p>
+            <p class="year">2020</p>
+            <p class="level">2</p>
+            <p class="duration">1</p>
+          </div>
+          <div class="item width2 illustration identity">
+            <img src="./img/202005.png" />
+            <p class="name">몸은 좀 크지만 착한 친구</p>
+            <p class="year">2020</p>
+            <p class="level">2</p>
+            <p class="duration">2</p>
+          </div>
+
+          <div class="item width2 graphic identity">
+            <img src="./img/202007.png" />
+            <p class="name">키스 해링: 전시 아이덴티티 디자인</p>
+            <p class="year">2020</p>
+            <p class="level">2</p>
+            <p class="duration">3</p>
+          </div>
+          <div class="item illustration video">
+            <img src="./img/202008.png" />
+            <p class="name">엄니식당: 치즈김치전 인포그래픽 영상</p>
+            <p class="year">2020</p>
+            <p class="level">2</p>
+            <p class="duration">2</p>
+          </div>
+          <div class="item graphic">
+            <img src="./img/202101.png" />
+            <p class="name">찰리와 초콜릿 공장: 넷플릭스 초청권</p>
+            <p class="year">2021</p>
+            <p class="level">2</p>
+            <p class="duration">1</p>
+          </div>
+          <div class="item width2 illustration">
+            <img src="./img/202102.png" />
+            <p class="name">실크스크린실 미화 프로젝트</p>
+            <p class="year">2021</p>
+            <p class="level">1</p>
+            <p class="duration">1</p>
+          </div>
+          <div class="item photography">
+            <img src="./img/202103.png" />
+            <p class="name">정릉 왕자 조반달</p>
+            <p class="year">2021</p>
+            <p class="level">1</p>
+            <p class="duration">1</p>
+          </div>
+          <div class="item illustration">
+            <img src="./img/202104.png" />
+            <p class="name">피아니스트 조반달</p>
+            <p class="year">2021</p>
+            <p class="level">1</p>
+            <p class="duration">1</p>
+          </div>
+
+          <div class="item illustration">
+            <img src="./img/202106.png" />
+            <p class="name">사랑은 김치와도 같아서 Zine</p>
+            <p class="year">2021</p>
+            <p class="level">3</p>
+            <p class="duration">2</p>
+          </div>
+          <div class="item graphic">
+            <img src="./img/202107.png" />
+            <p class="name">건강을 위해 열매를 금하다</p>
+            <p class="year">2021</p>
+            <p class="level">2</p>
+            <p class="duration">2</p>
+          </div>
+          <div class="item video">
+            <img src="./img/202108.png" />
+            <p class="name">트루먼쇼: 엔딩 크레딧 영상</p>
+            <p class="year">2021</p>
+            <p class="level">2</p>
+            <p class="duration">2</p>
+          </div>
+
+          <div class="item threed">
+            <img src="./img/202205.png" />
+            <p class="name">402 Business Class</p>
+            <p class="year">2022</p>
+            <p class="level">1</p>
+            <p class="duration">1</p>
+          </div>
+
         </div>
-        <div class="meta">
-          <div class="outcome"></div>
-          <p>tag</p>
-          <span>
-            <input id="cat-poster" type="checkbox" value="poster" />
-            <label for="cat-poster">포스터</label>
-          </span>
-          <span>
-            <input id="cat-video" type="checkbox" value="video" />
-            <label for="cat-video">비디오</label>
-          </span>
-          <span>
-            <input id="cat-zine" type="checkbox" value="zine" />
-            <label for="cat-zine">소책자</label>
-          </span>
-          <span>
-            <input id="cat-website" type="checkbox" value="poster" />
-            <label for="cat-website">웹사이트</label>
-          </span>
-          <div class="date"></div>
+        <div class="side">
+          <div id="sorts" class="button-group">
+            <button class="button original-order" data-sort-by="original-order">
+              original
+            </button>
+            <button class="button" data-sort-by="year">최신순</button>
+            <button class="button" data-sort-by="duration">제작기간</button>
+            <button class="button" data-sort-by="level">난이도</button>
+          </div>
         </div>
       </div>
     </main>
-    <script src="main.js"></script>
+
+    <script src="./main.js"></script>
   </body>
 </html>

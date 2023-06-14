@@ -1,0 +1,306 @@
+@font-face {
+  font-family: 'NanumSquareNeo-Variable';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'NanumSquareNeo-Variable';
+
+}
+
+/* header body */
+
+h1 {
+  color: white;
+}
+
+body {
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transition: background-color 5s ease-out;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #eeeeee;
+  backdrop-filter: blur(25px);
+  z-index: 100;
+  color: white;
+}
+
+header .gnb {
+  width: calc(100vw - 40px);
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+}
+
+header .gnb .menu {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+main {
+  margin-top: 90px;
+}
+
+/* a & buttons */
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FF5D5B;
+  text-decoration: none;
+}
+
+link:visited {
+  text-decoration: none;
+  color: white;
+}
+
+/* ---- button-group ---- */
+#filters {
+  width: calc(100vw - 40px);
+  max-width: 1000px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 1rem 0;
+  margin-bottom: 3rem;
+  gap: 5px;
+}
+
+.button-group .button {
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  background: transparent;
+
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+
+  cursor: pointer;
+  margin: 5px 2px;
+}
+
+.button:hover {
+  background-color: #ffaead;
+  color: #222;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #FF5D5B;
+}
+
+.button.is-checked {
+  color: white;
+  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+}
+
+.button:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+.button-group {
+  margin-bottom: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.button-group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* sorts */
+#sorts {
+  float: left;
+  position: sticky;
+  height: 10vh;
+  top: 100px;
+}
+
+/* ---- grid ---- */
+.content-wrap {
+  width: calc(100vw - 40px);
+  max-width: 1500px;
+  margin: 0 auto;
+  min-height: 50vh;
+  display: flex;
+}
+
+.grid {
+  width: calc(100% - 120px - 190px);
+  max-width: 1200px;
+  margin-right: 120px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0%;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.side {
+  width: 190px;
+}
+
+/* ---- .grid-item ---- */
+
+.item {
+  position: absolute;
+  justify-content: center;
+  float: left;
+  min-height: 20vh;
+  margin-bottom: 50px;
+}
+
+.width2>img {
+  max-width: 30vw;
+  max-height: 60vh;
+}
+
+img {
+  position: relative;
+  max-width: 20vw;
+  max-height: 30vh;
+  transition: all 1s ease;
+}
+
+.item>p {
+  transition: all 1s ease;
+  opacity: 0;
+}
+
+/* caption */
+.level {
+  display: none;
+}
+
+.duration {
+  display: none;
+}
+
+.name {
+  color: white;
+  font-size: 16px;
+  line-height: 170%;
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  opacity: 0;
+
+}
+
+.year {
+  color: white;
+  font-size: 12px;
+  line-height: 170%;
+  position: absolute;
+  margin-top: 25px;
+  top: 70%;
+  left: 10%;
+  opacity: 0;
+}
+
+/* item hover */
+.item:hover img {
+  filter: brightness(0.3);
+  border-radius: 30px;
+  /* 이미지를 어둡게 함 */
+}
+
+.item:hover p {
+  opacity: 1;
+}
+
+/* KPT */
+
+.grid-kpt {
+  width: calc(100% - 120px - 190px);
+  max-width: 1200px;
+  margin-right: 120px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0%;
+  z-index: 99;
+}
+
+.kpt {
+  display: inline-block;
+  padding: 20px 20px;
+  background-color: #191F29;
+  border-radius: 10px;
+  backdrop-filter: blur(25px);
+  margin-bottom: 30px;
+}
+
+.kpt p {
+  color: white;
+}
+
+p.keep {
+  color: #B89CE2;
+  font-size: 12px;
+  line-height: 200%;
+}
+
+p.problem {
+  color: #70D0E2;
+  font-size: 12px;
+  line-height: 200%;
+}
+
+p.try {
+  color: #F6673B;
+  font-size: 12px;
+  line-height: 200%;
+}
+
+p.title {
+  font-size: 16px;
+  line-height: 170%;
+  margin-bottom: 20px;
+}
+
+p.date {
+  font-size: 12px;
+}

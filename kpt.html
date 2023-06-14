@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./stlye.css" />
+    <script src="./jquery-3.7.0.min.js"></script>
+    <script src="./isotope.pkgd.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="gnb">
+        <a href="./index.html">SungHoon</a>
+        <div class="menu">
+          <a href="./kpt.html" style="color: #ff5d5b">KPT</a>
+          <a href="https://www.instagram.com/syunghoon/">Instagram</a>
+          <a href="https://blog.naver.com/hoonsyung/222679657910">Blog</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="filters" class="button-group">
+        <button class="button is-checked" data-filter="*">show all</button>
+        <button class="button" data-filter=".keep">Keep</button>
+        <button class="button" data-filter=".problem">Problem</button>
+        <button class="button" data-filter=".try">Try</button>
+      </div>
+      <div class="content-wrap">
+        <div class="grid-kpt">
+          <div class="kpt keep">
+            <p class="keep">Keep</p>
+            <p class="title">챗지피티를 적극 활용하여 코드 구현하기</p>
+            <p class="date">2023-06-14</p>
+          </div>
+          <div class="kpt problem">
+            <p class="problem">Problem</p>
+            <p class="title">
+              웹 제작할 때, 스케치 철저하게 그리고 제작하기:<br />명확히 구조를
+              잡지 않은 상태에서 제작하니, 작업 진행이 되질 않았다.
+            </p>
+            <p class="date">2023-06-12</p>
+          </div>
+          <div class="kpt problem">
+            <p class="problem">Problem</p>
+            <p class="title">
+              VSC를 사용할 때, 유용한 단축키 및 세팅을 모르니 불필요한 작업이
+              많았다.
+            </p>
+            <p class="date">2023-06-14</p>
+          </div>
+          <div class="kpt try">
+            <p class="try">Try</p>
+            <p class="title">
+              피그마에서 정교한 웹 스케치를 만들고 그대로 구현해보기
+            </p>
+            <p class="date">2023-06-15</p>
+          </div>
+          <div class="kpt try">
+            <p class="try">Try</p>
+            <p class="title">VSC의 유용한 익스텐션들을 활용해보기</p>
+            <p class="date">2023-06-12</p>
+          </div>
+          <div class="kpt keep">
+            <p class="keep">Keep</p>
+            <p class="title">
+              가벼운 Figma를 적극적으로 활용하여 이미지 관리하기
+            </p>
+            <p class="date">2023-06-13</p>
+          </div>
+          <div class="kpt problem">
+            <p class="problem">Problem</p>
+            <p class="title">
+              다양한 어플리케이션을 제작할 때, 파일 저장에 어려움이 있었다.
+            </p>
+            <p class="date">2023-06-13</p>
+          </div>
+          <div class="kpt problem">
+            <p class="problem">Problem</p>
+            <p class="title">
+              피그마에서도, 프레임이 많아질수록 관리가 쉽지 않았다.
+            </p>
+            <p class="date">2023-06-13</p>
+          </div>
+          <div class="kpt try">
+            <p class="try">Try</p>
+            <p class="title">피그마 page / wrap을 나누어 저장해보기</p>
+            <p class="date">2023-06-14</p>
+          </div>
+          <div class="kpt keep">
+            <p class="keep">Keep</p>
+            <p class="title">
+              챗지피티에게 조건을 설정하여 더욱 구체적인 답변받기
+            </p>
+            <p class="date">2023-06-14</p>
+          </div>
+          <div class="kpt problem">
+            <p class="problem">Problem</p>
+            <p class="title">
+              코드를 무작정 복사하지 않기:<br />너무나 그럴싸하게 답변하는
+              바람에, 아무 의심없이 믿어버리니 코드가 꼬이고 어디에서 잘못된건지
+              모르는 경우가 있었다
+            </p>
+            <p class="date">2023-06-12</p>
+          </div>
+          <div class="kpt problem">
+            <p class="problem">Problem</p>
+            <p class="title">
+              자바스크립트 라이브러리 기능을 사용할 때도 챗지피티에게 물어보기만
+              했었다.
+            </p>
+            <p class="date">2023-06-14</p>
+          </div>
+          <div class="kpt try">
+            <p class="try">Try</p>
+            <p class="title">영어로 된 공식문서를 읽는 습관을 길러보기</p>
+            <p class="date">2023-06-15</p>
+          </div>
+          <div class="kpt try">
+            <p class="try">Try</p>
+            <p class="title">공식문서에서 코드를 복사하며 직접 보고 익혀보기</p>
+            <p class="date">2023-06-12</p>
+          </div>
+        </div>
+        <div class="side">
+          <div id="sorts" class="button-group">
+            <button class="button" data-sort-by="date">최신순</button>
+            <button class="button old" data-sort-by="date">오래된순</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
