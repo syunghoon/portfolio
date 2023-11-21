@@ -29,10 +29,6 @@ $(window).on('load', function () {
     }
   });
 
-  var filterFns = {
-    // 커스텀 필터 함수를 여기에 추가할 수 있습니다.
-  };
-
   // bind filter button click
   $('#filters').on('click', 'button', function () {
     var filterValue = $(this).attr('data-filter');
