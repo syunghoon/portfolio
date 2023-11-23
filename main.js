@@ -32,8 +32,6 @@ $(window).on('load', function () {
   // bind filter button click
   $('#filters').on('click', 'button', function () {
     var filterValue = $(this).attr('data-filter');
-    // use filterFn if matches value
-    filterValue = filterFns[filterValue] || filterValue;
     $grid.isotope({
       filter: filterValue
     });
@@ -41,6 +39,7 @@ $(window).on('load', function () {
       filter: filterValue
     });
   });
+  
 
   // "original order" 버튼 클릭 시
   $('.original-order').on('click', function () {
